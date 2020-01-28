@@ -1,0 +1,98 @@
+<!-- <section class="container-fluid" id="portfolio">
+      <div id="header" class="blue_lin">
+            <h3 class="headerFont">Diageo Vendor Management System</h3>
+        </div>
+   <div class="row">
+     <div class="col-md-12">
+       <app-header></app-header>
+     </div>
+   </div>
+</section> -->
+<nav>
+   <ol class="breadcrumb breadcrumbFont">
+     <li class="breadcrumb-item"><a href="/businessReq">Business Requirement</a></li>
+     <li class="breadcrumb-item"><a href="/serviceReq">Service Requirement</a></li>
+     <li class="breadcrumb-item"><a href="/projectReq">Project Requirement</a></li>
+   </ol>
+</nav>
+<fieldset>
+<div class="col-md-12 container jumbotron">
+   <h3>ADD Project</h3>
+        <form>
+           <div class="row">
+              <div class="form-group col-md-4 ">
+                 <label for="title">Title</label>
+                 <input [(ngModel)]="project.title" placeholder="Project Title" name="title" class="form-control" id="title">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="lineOfBusiness">Line Of Business</label>
+                  <input [(ngModel)]="project.lineOfBusiness" placeholder="Line Of Business" name="lineOfBusiness" class="form-control" id="lineOfBusiness">
+               </div>
+              <div class="form-group col-md-4">
+                 <label for="businessUnit">Business Unit</label>
+                 <input [(ngModel)]="project.vendor" placeholder="Business Unit" name="businessUnit" class="form-control" id="businessUnit">
+              </div>
+              
+           </div>
+           <div class="row">
+               <div class="form-group col-md-4">
+                     <label for="Type">Type</label><br>                           
+                     <select  class="form-control projectType">
+                           <option *ngFor="let projectName of projectNames" [value]="project.projectType" >{{projectName}}</option>
+                     </select>
+               </div>
+              <div class="form-group col-md-4">
+                 <label for="duration">Start Date</label>
+                 <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd"
+                           name="dp" [(ngModel)]="project.duration" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary fa fa-calendar" (click)="d.toggle()" type="button"></button>
+                    </div>
+                  </div>
+               </div>
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="endDate">End Date</label>
+                  <div class="form-group">
+                     <div class="input-group">
+                       <input class="form-control" placeholder="yyyy-mm-dd"
+                              name="dp" [(ngModel)]="project.endDate" ngbDatepicker #e="ngbDatepicker">
+                       <div class="input-group-append">
+                         <button class="btn btn-outline-secondary fa fa-calendar" (click)="e.toggle()" type="button"></button>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="form-group col-md-4">
+                     <label for="budget">Budget</label>
+                     <input [(ngModel)]="project.budget" placeholder="Budget" name="budget" class="form-control" id="budget">
+               </div>
+               <div class="form-group col-md-4">
+                     <label for="city">Location</label>
+                     <input [(ngModel)]="project.city" placeholder="City" name="city" class="form-control" id="city">
+               </div>
+               <div class="form-group col-md-4">
+                     <label for="maxRate">Vendors</label>
+                     <input [(ngModel)]="project.maxRate" placeholder="Max Rate" name="maxRate" class="form-control" id="maxRate">
+               </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-md-4">
+                 <label for="projectScope">Project Scope</label> <br>
+                 <ejs-richtexteditor id='defaultRTE' [(value)]='value' [(ngModel)]="project.projectScope" [toolbarSettings]='tools' [quickToolbarSettings]='quickTools'></ejs-richtexteditor>
+            </div>
+            </div>
+           <div class="row">
+              <div class="form-group col-md-10">
+                 <button class="btn btn-success btn-xs col-md-2" (click)="addProject(project)">Add Project</button>
+                 <button class="btn btn-success btn-xs col-md-1" (click)="reset()">Reset</button>
+                 <button class="btn btn-success btn-xs col-md-2" (click)="backToCandidates()">Back To Projects</button>
+              </div>
+           </div>
+      </form>
+</div>
+</fieldset>

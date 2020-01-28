@@ -1,0 +1,44 @@
+<div id="header" class="blue_lin" *ngIf="nav.visible">
+  <!-- <div class="logo" id="left">
+    <img src="/assets/img/diageo.jpg" width="160" height="60" alt="Ekra">
+  </div> -->
+ 
+    <h3 class="headerFont">Diageo Vendor Management System</h3>
+</div>
+<nav class="navbar navbar-expand-sm" *ngIf="nav.visible">
+  <div>
+  <ul class="nav">
+      <li class="icons">
+          <a href="#">
+            <i class="fa fa-power-off test"></i>
+          </a>
+          {{temp.firstName}}
+      </li>
+  </ul>
+</div>
+<div>
+  <ul class="navbar-nav">
+    <li class="nav-item"  [ngClass]="{'active': selectedItem === 'item1'}" (click)="selectedItem = 'item1'">
+      <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item2'}" (click)="selectedItem = 'item2'">
+        <a class="nav-link" [routerLink]="['/project']">Project</a>
+      </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item3'}" (click)="selectedItem = 'item3'">
+      <a class="nav-link" [routerLink]="['/talent']">Talent</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item4'}" (click)="selectedItem = 'item4'">
+        <a class="nav-link" [routerLink]="['/vendor']">Vendor</a>
+      </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item5'}" (click)="selectedItem = 'item5'">
+      <a class="nav-link" [routerLink]="['/employee']">Employee</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item6'}" (click)="selectedItem = 'item6'">
+      <a class="nav-link" [routerLink]="['/contact']">Contacts</a>
+    </li>
+    <li class="nav-item" [ngClass]="{'active': selectedItem === 'item7'}" (click)="selectedItem = 'item7'">
+      <a class="nav-link" [routerLink]="['/reports']">Reports</a>
+    </li>
+  </ul>
+</div>
+</nav>

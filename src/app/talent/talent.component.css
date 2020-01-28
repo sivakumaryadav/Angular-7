@@ -1,0 +1,20 @@
+.breadcrumbFont {
+    padding: .15rem 1rem;
+    background-color: indianred;
+}
+
+a {
+    color: darkgreen;
+}
+a:hover {
+    color: white;
+}
+.cd-breadcrumb ::after {
+    display: inline-block;
+    content: '\00bb';
+    margin: 0 .6em;
+    color: #959fa5;
+}
+.ag-theme-balham .ag-header {
+    background-color: dimgrey;
+}

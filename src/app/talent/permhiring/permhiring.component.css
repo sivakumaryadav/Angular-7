@@ -1,0 +1,19 @@
+.jumbotron {
+    padding: 1rem 2rem;
+    margin-top: 25px;
+    background-color: #3ab2e2;
+}
+.form-control {
+    display: block;
+    width: 75%;
+    height: calc(1.1em + .75rem + 0px);
+}
+.file {
+    margin-top: 5px;
+}
+.btn-xs {
+    margin-left: 2px;
+}
+h3{
+    text-align: center;
+}

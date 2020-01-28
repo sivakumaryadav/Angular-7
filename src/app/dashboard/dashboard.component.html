@@ -1,0 +1,41 @@
+<!-- <section class="container-fluid" id="portfolio">
+    <div id="header" class="blue_lin">
+       <h3 class="headerFont">Diageo Vendor Management System</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <app-header></app-header>
+      </div>
+    </div>
+</section>  -->
+<div class="row">
+<div class="col-md-6" *ngIf="recentHiresInd">
+    <h4 class="column">Recent Hires</h4>
+    <ag-grid-angular
+        #agGrid 
+        style="height: 200px;" 
+        class="ag-theme-fresh  column"
+        [rowData]="rowData"
+        [sideBar]="sideBar"
+        [columnDefs]="recentHiresColumnDefs"
+        rowSelection="multiple"
+        >
+    </ag-grid-angular>
+</div>
+
+<div class="col-md-6" *ngIf="importantCandidatesInd">
+    <h4>Hiring Overview</h4>
+</div>
+</div>
+<div class="container" *ngIf="importantCandidatesInd">
+        <h4>Important Candidates</h4>
+        <ag-grid-angular
+            #agGrid 
+            style="height: 200px;" 
+            class="ag-theme-fresh"
+            [rowData]="rowData"
+            [columnDefs]="importantCandidatesColumnDefs"
+            rowSelection="multiple"
+            >
+        </ag-grid-angular>
+    </div>

@@ -1,0 +1,19 @@
+.navbar {
+    padding: 0%;
+    background-color:  #C80651;
+}
+.nav-link {
+    color: white;
+}
+.button{
+    align-items: center;
+    color: white;
+}
+.navbar-expand-sm .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+    border-bottom: 3px solid#555;
+}
+.nav {
+    list-style: none;
+}

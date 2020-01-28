@@ -1,0 +1,89 @@
+<!-- <section class="container-fluid" id="portfolio">
+        <div id="header" class="blue_lin">
+            <h3 class="headerFont">Diageo Vendor Management System</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <app-header></app-header>
+          </div>
+        </div>
+</section> -->
+<div class="col-md-9 container jumbotron">
+      <h3>Talent Profile</h3>
+      <form>
+          <div class="row">
+              <div class="form-group col-md-4 ">
+                  <label for="title">Title</label>
+                  <input [(ngModel)]="talent.title" placeholder="Title" name="title" class="form-control" id="title">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="vendor">Vendor</label>
+                  <input [(ngModel)]="talent.vendor" placeholder="Vendor" name="vendor" class="form-control" id="vendor">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="businessUnit">Business Unit</label>
+                  <input [(ngModel)]="talent.businessUnit" placeholder="Business Unit" name="businessUnit" class="form-control" id="businessUnit">
+              </div>
+  
+          </div>
+          <div class="row">
+              <div class="form-group col-md-4">
+                  <label for="lineOfBusiness">Line Of Business</label>
+                  <input [(ngModel)]="talent.lineOfBusiness" placeholder="Line Of Business" name="lineOfBusiness" class="form-control" id="lineOfBusiness">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="duration">Duration</label>
+                  <input [(ngModel)]="talent.duration" placeholder="Duration" name="duration" class="form-control" id="duration">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="status">Status</label>
+                  <input [(ngModel)]="talent.status" placeholder="Status" name="status" class="form-control" id="status">
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-4">
+                  <label for="maxRate">Max Rate</label>
+                  <input [(ngModel)]="talent.maxRate" placeholder="Max Rate" name="maxRate" class="form-control" id="maxRate">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="minRate">Min Rate</label>
+                  <input [(ngModel)]="talent.minRate" placeholder="Min Rate" name="minRate" class="form-control" id="minRate">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="resourcesCount">No.Of Resources</label>
+                  <input [(ngModel)]="talent.resourcesCount" placeholder="No.Of Resources" name="resourcesCount" class="form-control" id="resourcesCount">
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-4">
+                  <label for="city">City</label>
+                  <input [(ngModel)]="talent.city" placeholder="City" name="city" class="form-control" id="city">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="state">State</label>
+                  <input [(ngModel)]="talent.state" placeholder="State" name="state" class="form-control" id="state">
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="postalCode">Postal Code</label>
+                  <input [(ngModel)]="talent.postalCode" placeholder="Postal Code" name="postalCode" class="form-control" id="postalCode">
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-4">
+                  <label for="description">Description</label>
+                  <textarea rows="4" cols="30" [(ngModel)]="talent.description" name="description" class="description" id="description"></textarea>
+              </div>
+              <div class="form-group col-md-4">
+                  <label for="miscNotes">Misc Notes</label>
+                  <textarea rows="4" cols="30" [(ngModel)]="talent.notes" name="notes" class="notes" id="notes"></textarea>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-10">
+                  <button class="btn btn-success btn-xs col-md-2" (click)="addTalent(talent)">Add Talent</button>
+                  <button class="btn btn-success btn-xs col-md-2" (click)="reset()">Reset</button>
+                  <button class="btn btn-success btn-xs col-md-3" (click)="backToTalent()">Back To Talent</button>
+              </div>
+          </div>
+      </form>
+  </div>

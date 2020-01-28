@@ -1,0 +1,26 @@
+.jumbotron {
+    padding: 1rem 2rem;
+    background-color: #e9ecef !important;
+}
+.form-control {
+    display: block;
+    width: 75%;
+    height: calc(1.1em + .75rem + 0px);
+}
+.btn-xs {
+    margin-left: 2px;
+}
+
+h3{
+    text-align: center;
+}
+.input-group {
+    width: 75%;
+}
+fieldset {
+    border: 1px solid black;
+    margin: 4px;
+}
+.projectType {
+    height: 35px;
+}

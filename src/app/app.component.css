@@ -1,0 +1,114 @@
+h3{
+    text-align: center;
+}
+#header {
+	height:60px;
+	clear:both;
+	z-index:99999;
+	top:0px;
+	background-color:  #C80651;
+	color: white;
+}
+
+.container-fluid {
+	padding: 0 !important;
+}
+
+#portfolio {
+	background-color: #EFF0F0;
+}
+	
+#portfolio #portfolio-title {
+	background-color: #2E3747 !important;
+}
+.logo {
+	height:59px;
+	float:left;
+}
+
+.user_thumb {
+	width:28px;
+	height:28px;
+	padding:5px;
+	float:left;
+	margin-right:10px;
+}
+
+.user_info span {
+	display:block;
+	color:#fff;
+	text-shadow: 1px 1px 1px #6d6d6d;
+}
+
+.user_name {
+	font-weight:bold;
+	margin:5px 0;
+}
+
+.alert .icon, .inbox a .icon, .logout a .icon, #theme-default .user_thumb .icon {
+	width:30px;
+	height:30px;
+	display:block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+}
+
+.name {
+	font-size: 16px;
+	color: #fff;
+}
+
+.header_left {
+	width:430px;
+	float:left;
+	margin-left:10px;
+}
+
+.header_right {
+	width:435px !important;
+}
+
+.logout {
+	width:38px;
+	height:38px;
+	float:right;
+}
+
+#responsive_mnu {
+	float:left !important;
+	display: block !important;
+}
+
+#user_nav {
+	width:280px;
+	float:right;
+}
+
+#container {
+	height: 100%;
+	width:100%; 
+	font-size: 0;
+}
+#left, #middle, #right {
+	display: inline-block; 
+	*display: inline; 
+	zoom: 1; 
+	vertical-align: 
+	top; font-size: 12px;
+}
+#left {
+	width: 38%; 
+}
+#middle {
+	width: 50%; 
+	background: green;
+}
+#right {
+	width: 25%; 
+	background: yellow;
+}
+.headerFont {
+	padding-top: 1%;
+    font-family: Roboto;
+}

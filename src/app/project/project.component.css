@@ -1,0 +1,11 @@
+.breadcrumbFont {
+    padding: .15rem 1rem;
+}
+.container {
+    max-width: 942px;
+}
+.ag-header-cell-text
+{
+display: inline-block;
+text-align: center;
+}

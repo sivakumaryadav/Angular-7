@@ -1,0 +1,29 @@
+<div class="container login">
+  <div *ngIf="!loginSuccess">
+    <a routerLink="/dashboard" routerLinkActive="active"></a>
+  </div>
+    <div class="row backgroundColor" *ngIf="loginSuccess">
+        <div class="col-md-4 login_bg" id="login">
+        <img src="assets/img/diageo.png"  width="350" height="100" alt="Diageo">
+          <form class="">
+            <div class="form-group">
+             <input [(ngModel)]="login.userName" type="email" placeholder="User Name" name="userName" class="form-control skinny" id="userName">
+            </div>
+          <div class="form-group">
+            <input [(ngModel)]="login.password" type="password" placeholder="Password" name="password" class="form-control skinny" id="Password">
+          </div>
+          <!-- <app-ejs-text-editor></app-ejs-text-editor> -->
+        </form>
+        <div class="form-group row">
+          <div class="col-md-3">
+            <button class="btn login_btn" (click)="validate(login)">Login</button>
+           
+          </div>
+          <div class="col-md-6">
+              
+              <button class="btn login_btn" (click)="reset()">Reset</button>
+            </div>
+      </div>
+     </div>
+    </div>
+</div>

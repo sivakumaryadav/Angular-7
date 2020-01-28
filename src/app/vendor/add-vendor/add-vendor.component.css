@@ -1,0 +1,12 @@
+.form-control {
+    display: block;
+    width: 75%;
+    height: calc(1.1em + .75rem + 0px);
+}
+.btn-xs {
+    margin-left: 2px;
+}
+
+h3{
+    text-align: center;
+}

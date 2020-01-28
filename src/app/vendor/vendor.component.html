@@ -1,0 +1,32 @@
+<!-- <section class="container-fluid" id="portfolio">
+    <div id="header" class="blue_lin">
+        <h3 class="headerFont">Diageo Vendor Management System</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <app-header></app-header>
+      </div>
+    </div>
+</section> -->
+<div>
+  <button type="button" class="btn btn-primary" style='margin-right:12px' (click) = "onAddClick()">Add Vendor</button>
+  <button type="button" class="btn btn-primary" style='margin-right:12px' (click) = "onSearchClick()">Search Vendor</button>
+</div>
+<div class="row">
+    <div class="form-group col-md-4">
+    <ng-multiselect-dropdown name="select" [placeholder]="'Department Desc'" [data]="departmentList" [(ngModel)]="selectedDepartments" 
+                  [settings]="departmentDropdownSettings" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)"></ng-multiselect-dropdown>
+    </div>
+  </div>
+<div class="col-md-12 container jumbotron">
+  <h4>Vendors</h4>
+  <ag-grid-angular
+      #agGrid 
+      style="width: 1300px; height: 300px;" 
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      rowSelection="multiple"
+      >
+  </ag-grid-angular>
+</div>

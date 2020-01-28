@@ -1,0 +1,81 @@
+<!-- <section class="container-fluid" id="portfolio">
+        <div id="header" class="blue_lin">
+            <h3 class="headerFont">Diageo Vendor Management System</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <app-header></app-header>
+          </div>
+        </div>
+</section> -->
+<div class="col-md-9 container jumbotron">
+    <h3>Add Vendor</h3>
+    <form>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name">Vendor Name</label>
+                <input [(ngModel)]="vendor.name" placeholder="Vendor Name" name="name" class="form-control" id="name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="email">Email</label>
+                <input type="email" [(ngModel)]="vendor.email" placeholder="Email" name="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="url">WebSite</label>
+                <input [(ngModel)]="vendor.url" placeholder="Web Site URL" name="url" class="form-control" id="url">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="cellNumber">Primary Number</label>
+                <input [(ngModel)]="vendor.phone1" placeholder="Primary Number" name="cellNumber" class="form-control" id="cellNumber">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="workNumber">Scondary Number</label>
+                <input [(ngModel)]="vendor.phone2" placeholder="Work Number" name="workNumber" class="form-control" id="workNumber">
+            </div>
+            <div class="form-group col-md-4 ">
+                <label for="fax">FAX</label>
+                <input [(ngModel)]="vendor.fax" placeholder="FAX" name="fax" class="form-control" id="fax">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4 ">
+                <label for="postalCode">Postal Code</label>
+                <input [(ngModel)]="vendor.postalCode" placeholder="Postal Code" name="postalCode" class="form-control" id="postalCode">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="city">City</label>
+                <input [(ngModel)]="vendor.city" placeholder="City" name="city" class="form-control" id="city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="state">State</label>
+                <input [(ngModel)]="vendor.state" placeholder="State" name="state" class="form-control" id="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="keyTechnologies">Key Technologies</label>
+                <input [(ngModel)]="vendor.keyTechnologies" placeholder="Key Technologies" name="keyTechnologies" class="form-control" id="keyTechnologies">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="address">Address</label>
+                <textarea rows="3" cols="30" [(ngModel)]="vendor.address" name="address" style="margin-top: 0px; margin-bottom: 0px; height: 117px;" class="form-control" id="address"></textarea>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="miscNotes">Misc Notes</label>
+                <textarea rows="6" cols="30" [(ngModel)]="vendor.notes" name="notes" style="margin-top: 0px; margin-bottom: 0px; height: 117px;" class="form-control" id="notes"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-10">
+                <button class="btn btn-success btn-xs col-md-2" (click)="createVendor(vendor)">Add Vendor</button>
+                <button class="btn btn-success btn-xs col-md-2" (click)="reset()">Reset</button>
+                <button class="btn btn-success btn-xs col-md-3" (click)="backToCandidates()">Back To Vendor</button>
+            </div>
+        </div>
+    </form>
+</div>
